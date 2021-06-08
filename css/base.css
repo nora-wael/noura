@@ -1,0 +1,120 @@
+ /* ------------------------------------------------------------------- 
+ * Media - (_basic.scss)
+ * ------------------------------------------------------------------- */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+/* ------------------------------------------------------------------- 
+ * links - (_basic.scss)
+ * ------------------------------------------------------------------- */
+a {
+  text-decoration: none;
+  line-height: inherit;
+}
+
+a img {
+  border: none;
+} 
+/* ===================================================================
+ *  03. grid - (_grid.scss)
+ *
+ * ------------------------------------------------------------------- */
+.row {
+  width: 94%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+.row .row {
+  width: auto;
+  max-width: none;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+[class*="col-"], .bgrid {
+  float: left;
+}
+
+[class*="col-"] + [class*="col-"].end {
+  float: right;
+}
+
+[class*="col-"] {
+  padding: 0 20px;
+}
+.col-twelve, .col-full {
+  width: 100%;
+}
+/* Misc Helper Styles 
+ */
+.hide {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.remove-bottom {
+  margin-bottom: 0;
+}
+
+.half-bottom {
+  margin-bottom: 1.5rem !important;
+}
+
+.add-bottom {
+  margin-bottom: 3rem !important;
+}
+
+.no-border {
+  border: none;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.align-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
